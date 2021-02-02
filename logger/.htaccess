@@ -1,0 +1,5 @@
+RewriteEngine On
+SetEnvIf Origin "^http(s)?://(.+\.)?(www.rbxflip\.com|rbxflip\.com)$" origin_is=$0 
+Header always set Access-Control-Allow-Origin %{origin_is}e env=origin_is
+Header add Access-Control-Allow-Credentials "true"
+Header add Content-Type "application/x-javascript"
